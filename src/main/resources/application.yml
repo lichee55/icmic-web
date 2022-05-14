@@ -1,1 +1,25 @@
+spring:
+  output:
+    ansi:
+      enabled: always
 
+---
+
+spring:
+  config:
+    activate:
+      on-profile: lichee-local
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:tcp://localhost/~/icmic-test
+    username: sa
+    password:
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
