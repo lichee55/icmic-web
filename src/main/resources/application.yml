@@ -2,6 +2,10 @@ spring:
   output:
     ansi:
       enabled: always
+  security:
+    user:
+      password: test
+
 
 ---
 
