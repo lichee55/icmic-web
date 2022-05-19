@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Noto Sans';
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+
+        header>nav,
+        body>nav>div,
+        main>article,
+        footer>div {
+            /* 반응형 */
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        body>header {
+            margin-top: 45px;
+        }
+
+        header>nav>ul {
+            display: flex;
+            /* -webkit-transition: height 1s; */
+            /* transition: height 1s; */
+        }
+
+        header>nav>ul>li {
+            width: 150px;
+            padding: 0 13px;
+            text-align: center;
+            position: relative;
+        }
+
+        header>nav>ul>li>a {
+            line-height: 80px;
+            font-size: 17px;
+            letter-spacing: -0.1rem;
+            font-weight: 600;
+            color: #303030;
+        }
+
+        .sub-nav {
+            position: absolute;
+            overflow: hidden;
+            left: 0;
+            width: 150px;
+            height: 0;
+            -webkit-transition: height 1s;
+            transition: height 1s;
+            background-color: rgba(237, 239, 247, .95);
+        }
+
+        .sub-nav>ul {
+            padding-top: 20px;
+        }
+
+        .sub-nav>ul>li>a {
+            display: block;
+            padding: 10px 2px;
+            font-size: 0.9rem;
+        }
+
+        .sub-nav>ul>li>a>span {
+            letter-spacing: -0.9px;
+        }
+
+        body>nav {
+            background-color: #3f81e4;
+            height: 65px;
+        }
+
+        body>nav a {
+            width: 60px;
+            height: 65px;
+            display: block;
+            background-color: #2768c8;
+        }
+
+        body>nav a>i {
+            margin-top: 30px;
+            font-size: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        main>article>header {
+            display: flex;
+            align-items: flex-end;
+            padding: 30px 0;
+        }
+
+        main>article>header>h2 {
+            font-size: 24px;
+            line-height: 24px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            letter-spacing: -0.1rem;
+        }
+
+        main>article>header>h3 {
+            font-size: 17px;
+            color: #acacac;
+            margin-bottom: 11px;
+            letter-spacing: -0.1rem;
+        }
+
+        main>article>section {
+            border-bottom: 2px solid #3F81E4;
+            margin: 1em;
+            line-height: 2rem;
+        }
+
+        main>article>section>header>h3 {
+            font-weight: bold;
+            font-size: 1.3em;
+            color: #27488b;
+            padding-left: 1rem;
+            margin-top: 20px;
+        }
+
+        main>article>section>div {
+            padding: 1rem;
+        }
+
+        main>article>section a {
+            color: #3F81E4;
+        }
+
+        .articleListWrapper {
+            padding-left: 1rem;
+        }
+
+        .articleListWrapper>ul {
+            list-style: circle;
+            padding-left: 1rem;
+        }
+
+        span.emphasis {
+            color: red;
+        }
+
+        footer {
+            background: #ebedef;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- 1 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>About ICTC 2022</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>General
+                                        Information</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>What's
+                                        New</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 2 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Committees</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>International
+                                        Advisory Committee</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Steering
+                                        Committee</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Organizing
+                                        Committee</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Technical
+                                        Program Committee</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Symposia
+                                        Program Committee</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 3 -->
+                <li>
+                    <a href="/cfp"><span>Call for Papers</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="/cfp"><span>Call for Papers</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Paper
+                                        Submission</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Recent
+                                        results</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Video
+                                        submission</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 4 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Workshop</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Call for
+                                        Workshops</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 5 -->
+                <li>
+                    <a href="/program"><span>Program</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="/program"><span>Program at a Glance</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Technical
+                                        Paper Session</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Keynote
+                                        Speeches</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Industrial
+                                        Session</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Special
+                                        Session</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Guideline for
+                                        Session Chairs</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Information
+                                        for Presenters</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 6 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Registration</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#toBeDetermined"><span>Registration</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 7 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Travel
+                            Information</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#toBeDetermined"><span>Venue</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#toBeDetermined"><span>Accommodation</span></a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Travel
+                                        Information</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 8 -->
+                <li>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>History</span></a>
+                    <div class="sub-nav">
+                        <ul>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Past
+                                        Conferences</span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <div>
+            <a href="/"></a>
+        </div>
+    </nav>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Call for Papers</h2>
+                <h3>Call for Papers</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>GENERAL INFORMATION</h3>
+                </header>
+                <div>
+                    The International Conference on Maritime IT Convergence (ICMIC) will be inaugurated in 2022 with
+                    aims to promote convergence activities of maritime and terrestrial communications as well as related
+                    wireless communications. Recognizing that maritime communications will usually involve ship-to-ship
+                    and ship-to-shore communication, maritime ICT technologies will bring some mature but still evolving
+                    terrestrial wired/wireless communication technologies to its own use for future smart maritime
+                    communications. More specifically, the conference will focus on addressing challenges of maritime
+                    communications with ICT convergence or advanced wireless communications over various industrial
+                    sectors, academia and practice engineers. The conference will include keynote speech sessions,
+                    invited special sessions and technical paper sessions.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>RELATED TOPICS</h3>
+                </header>
+                <div>
+                    Potential topics in this conference include, but not limited to:
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>Maritime wireless communications</li>
+                            <li>Maritime artificial intelligence and machine learning</li>
+                            <li>6G, 5G and LTE-Advanced networks</li>
+                            <li>Autonomous driving</li>
+                            <li>Remote control</li>
+                            <li>Unmanned aerial vehicle</li>
+                            <li>Underwater wireless communications</li>
+                            <li>Machine-to-machine and D2D communications</li>
+                            <li>Military communication technologies</li>
+                            <li>Satellite communications</li>
+                            <li>Internet of Things</li>
+                            <li>Mobile Cloud Computing</li>
+                            <li>Mobile S/W and Data Science</li>
+                            <li>Big Data and Smart Computing</li>
+                            <li>Deep Learning-based Object Recognition</li>
+                            <li>Behavior Pattern Awareness</li>
+                            <li>VR, AR</li>
+                            <li>Metaverse Applications</li>
+                            <li>Indoor Positioning and Navigation Systems</li>
+                            <li>Smart Factory</li>
+                            <li>u-Healthcare Systems, Bio-informatics & Its Applications</li>
+                            <li>Smart Cities</li>
+                            <li>Vehicular Information and Communication Technologies</li>
+                            <li>Intelligent Transportation Systems</li>
+                            <li>Encryption and Security for ICT Convergence</li>
+                            <li>Block Chain</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>SUBMISSIONS</h3>
+                </header>
+                <div>
+                    ICMIC invites the submissions of original, unpublished research works that are currently not under
+                    review.
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>Full paper: 4 pages</li>
+                            <li>Recent results: 1 page</li>
+                        </ul>
+                    </div>
+                    Detailed formatting and submission guidelines are available at the conference website at <a
+                        href="http://icmic.org">http://icmic.org</a>.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>PRESENTATION</h3>
+                </header>
+                <div>
+                    The accepted paper will be presented in an oral session. All accepted papers will appear in the
+                    ICMIC 2022 proceedings only if at least one of the authors register the conference to present the
+                    paper.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>JOURNAL PUBLICATION</h3>
+                </header>
+                <div>
+                    Extended versions of selected papers will be invited for publication in SCIE indexed journals such
+                    as ICT Express, Electronics, International Journal of Sensors, Wireless Communications and Control
+                    and other journals.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>IMPORTANT DATES</h3>
+                </header>
+                <div>
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>Paper submission deadline: <span class="emphasis">July 31, 2022</span></li>
+                            <li>Notification of acceptance: <span class="emphasis">August 15, 2022</span></li>
+                            <li>Camera ready deadline : <span class="emphasis">August 31, 2022</span></li>
+                            <li>Author registration deadline: <span class="emphasis">August 31, 2022</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut doloremque officia error ullam possimus amet
+            autem
+            unde nemo inventore repudiandae molestiae, pariatur temporibus placeat sunt vitae alias ea quos vero.
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="toBeDetermined" tabindex="-1" aria-labelledby="toBeDeterminedLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="toBeDeterminedLabel">To Be Determined.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $("header nav").hover(
+                function () {
+                    $(".sub-nav").height('380px');
+                }, function () {
+                    $(".sub-nav").height('0');
+                }
+            );
+        });
+    </script>
+</body>
+
+</html>
