@@ -27,3 +27,24 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: deploy
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://211.47.74.45:3306/dbicmic
+    username: icmic
+    password: icmic1234!
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: false
