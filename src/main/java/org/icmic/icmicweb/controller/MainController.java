@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MainController {
 
     @GetMapping("/")
-    @ResponseBody
     public String hello() {
-        return "hello";
+        return "index";
     }
 
     @GetMapping("/invite")
@@ -71,5 +70,10 @@ public class MainController {
     @GetMapping("/travel")
     public String travel() {
         return "travel";
+    }
+
+    @GetMapping("/program")
+    public String program() {
+        return "program";
     }
 }
