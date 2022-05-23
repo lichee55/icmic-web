@@ -18,6 +18,10 @@ a {
     color: inherit;
 }
 
+p {
+    margin: 0;
+}
+
 body > header > nav,
 body > nav > div,
 main > article,
@@ -111,4 +115,48 @@ body > nav a > i {
 
 footer {
     background: #ebedef;
+}
+
+footer > div {
+    padding: 22px 0 30px 0;
+    color: #333;
+    font-size: 15px;
+    letter-spacing: -0.06em;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div > div:first-child {
+    display: flex;
+}
+
+footer > div > div:first-child > div:first-child {
+    width: 160px;
+    text-align: center;
+}
+
+.footerIcmic {
+    font-size: 30px;
+    font-weight: 900;
+    color: #666;
+    line-height: 35px;
+    margin-bottom: 6px;
+}
+
+.footerVerySmall {
+    font-size: 10px;
+    color: #777;
+    line-height: 12px;
+}
+
+.footerInfo {
+    margin-left: 20px;
+}
+
+.footerMiddle {
+    margin: 1rem 0;
+}
+
+.footerCopyright {
+    font-size: 13px;
 }
