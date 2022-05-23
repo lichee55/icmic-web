@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -222,123 +222,7 @@
 </head>
 
 <body>
-<header>
-    <nav>
-        <ul>
-            <!-- 1 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>About ICMIC 2022</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>General
-                                        Information</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>What's
-                                        New</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 2 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Committees</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>International
-                                        Advisory Committee</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Steering
-                                        Committee</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Organizing
-                                        Committee</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Technical
-                                        Program Committee</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Symposia
-                                        Program Committee</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 3 -->
-            <li>
-                <a href="/cfp"><span>Call for Papers</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="/cfp"><span>Call for Papers</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Paper
-                                        Submission</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Recent
-                                        results</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Video
-                                        submission</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 4 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Workshop</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Call for
-                                        Workshops</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 5 -->
-            <li>
-                <a href="/program"><span>Program</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="/program"><span>Program at a Glance</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Technical
-                                        Paper Session</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Keynote
-                                        Speeches</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Industrial
-                                        Session</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Special
-                                        Session</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Guideline for
-                                        Session Chairs</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Information
-                                        for Presenters</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 6 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Registration</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal"
-                               data-bs-target="#toBeDetermined"><span>Registration</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 7 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Travel
-                            Information</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal"
-                               data-bs-target="#toBeDetermined"><span>Venue</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal"
-                               data-bs-target="#toBeDetermined"><span>Accommodation</span></a></li>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Travel
-                                        Information</span></a></li>
-                    </ul>
-                </div>
-            </li>
-            <!-- 8 -->
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>History</span></a>
-                <div class="sub-nav">
-                    <ul>
-                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined"><span>Past
-                                        Conferences</span></a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-    </nav>
-</header>
+<div th:replace="fragments/header :: header"></div>
 <nav>
     <div>
         <a href="/"></a>
