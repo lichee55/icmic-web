@@ -38,7 +38,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://211.47.74.45:3306/dbicmic
+    url: jdbc:mysql://211.47.75.102:3306/dbicmic
     username: icmic
     password: icmic1234!
 
