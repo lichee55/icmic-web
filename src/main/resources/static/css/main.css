@@ -1,0 +1,109 @@
+body {
+    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/ictc2022/img/77.png) no-repeat center top;
+    background-size: 1920px 950px;
+    background-color: #ebedef;
+}
+
+body > header > nav {
+    background-color: white;
+}
+
+main > article:first-of-type > :first-child {
+    display: flex;
+    margin-top: 60px;
+}
+
+main > article:first-of-type > :first-child > div {
+    padding: 0 15px;
+}
+
+#icmicInfo {
+    flex: 7;
+    color: white;
+    font-weight: bold;
+}
+
+#icmicTitle {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #0069a0;
+    font-size: 4.4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#icmicMeaning {
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+
+#icmicDate {
+    font-size: 2rem;
+}
+
+#icmicPlace {
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#icmicImage {
+    flex: 13;
+}
+
+#icmicImage > img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.board {
+    background-color: white;
+    box-shadow: 5px 10px 15px rgb(0 0 0 / 10%);
+    padding: 40px 35px;
+    letter-spacing: -0.1rem;
+}
+
+.board section {
+    padding: 0 15px;
+}
+
+.board > div {
+    display: flex;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    margin-bottom: 40px;
+}
+
+.board > div > section {
+    width: 50%;
+}
+
+.board section > header {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    padding-bottom: 0.8em;
+    border-bottom: solid 1px #f3f3f3;
+}
+
+.board table {
+    width: 100%;
+}
+
+.board td {
+    padding: 8px;
+    font-size: 1.25em;
+}
+
+.board td:first-of-type {
+    text-align: left;
+    font-weight: bold;
+}
+
+.board td:last-of-type {
+    text-align: right;
+}
+
+td.emphasis {
+    color: #4D8CC9;
+    font-weight: bold;
+}
