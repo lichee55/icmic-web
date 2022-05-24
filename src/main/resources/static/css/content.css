@@ -1,0 +1,73 @@
+main > article {
+    margin-bottom: 50px;
+}
+
+main > article > header {
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 0;
+}
+
+main > article > header > h2 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: -0.1rem;
+}
+
+main > article > header > h3 {
+    font-size: 17px;
+    color: #acacac;
+    margin-bottom: 11px;
+    letter-spacing: -0.1rem;
+}
+
+.fileDownload {
+    float: right;
+    color: #fff;
+    background-color: #ed6b75;
+    border-color: #ea5460;
+}
+
+.fileDownload:hover {
+    color: #fff;
+    background-color: #e73d4a;
+    border-color: #e42735;
+}
+
+main > article > section {
+    border-bottom: 2px solid #3F81E4;
+    margin: 1em;
+    line-height: 2rem;
+}
+
+main > article > section > header > h3 {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #27488b;
+    padding-left: 1rem;
+    margin-top: 20px;
+}
+
+main > article > section > div {
+    padding: 1rem;
+}
+
+main > article > section a {
+    color: #3F81E4;
+}
+
+.articleListWrapper {
+    padding-left: 1rem;
+}
+
+.articleListWrapper > ul {
+    list-style: circle;
+    padding-left: 1rem;
+}
+
+span.emphasis {
+    color: red;
+}
