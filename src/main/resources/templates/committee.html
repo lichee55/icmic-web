@@ -4,21 +4,7 @@
 <head>
     <div th:replace="fragments/head :: head"></div>
     <link rel="stylesheet" href="/css/content.css">
-    <style>
-        .row {
-            padding-left: 4em;
-        }
-
-        .col-md-10 > p {
-            margin-top: -1em;
-        }
-
-        .committee-block > ul {
-            list-style: none;
-            padding-left: 0;
-            margin-top: 1.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/list-style-content.css">
 </head>
 
 <body>
@@ -35,341 +21,75 @@
         <br>
 
         <!-- 본문 -->
+        <section>
+            <header>
+                <ul><li>General (co-)Chairs</li></ul>
+            </header>
+            <ul>
+                <li>Yeon-Ho Chung <span>Pukyong National University</span></li>
+                <li>Dong-Myung Lee <span>Tongmyong University</span></li>
+            </ul>
+        </section>
 
         <section>
-            <div class="committee-block">
-                <h4>General (co-)chair</h4>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yeon-Ho Chung</h5>
-                                <p>
-                                    <span>Pukyong National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Dong-Myung Lee</h5>
-                                <p>
-                                    <span>Tongmyong University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="committee-block">
-                <h4>Technical program (co-)committee</h4>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Seung-Jae Baek</h5>
-                                <p>
-                                    <span>Korea Institute of Ocean Science & Technology</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Kyung-Rak Sohn</h5>
-                                <p>
-                                    <span>Korea Maritime & Ocean University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="committee-block">
-                <h4>Technical program committee</h4>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yeon-Ho Chung</h5>
-                                <p>
-                                    <span>Pukyong National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Dong-Myung Lee</h5>
-                                <p>
-                                    <span>Tongmyong University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Seung-Jae Baek</h5>
-                                <p>
-                                    <span>Korea Institute of Ocean Science & Technology</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Kyung-Rak Sohn</h5>
-                                <p>
-                                    <span>Korea Maritime & Ocean University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Jae-Hong Lim</h5>
-                                <p>
-                                    <span>Korea Maritime & Ocean University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yong-Jae Kim</h5>
-                                <p>
-                                    <span>Korea Institute of Ocean Science & Technology</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yu-Jae Song</h5>
-                                <p>
-                                    <span>Kumoh National Institute of Technology</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Woo-Yeol Choi</h5>
-                                <p>
-                                    <span>Chosun University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Sung-Hoon Lim</h5>
-                                <p>
-                                    <span>Hallym University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Woo-Yong Lee</h5>
-                                <p>
-                                    <span>Electronics and Telecommunications Research Institute</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Keun-Young Kim</h5>
-                                <p>
-                                    <span>Electronics and Telecommunications Research Institute</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Jin-Hwan Go</h5>
-                                <p>
-                                    <span>Gyeongsang National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Wang-Sang Lee</h5>
-                                <p>
-                                    <span>Gyeongsang National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Hyun-Tae Cho</h5>
-                                <p>
-                                    <span>Tongmyong University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Seok-Chan Kim</h5>
-                                <p>
-                                    <span>Pusan National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yeon-Man Jung</h5>
-                                <p>
-                                    <span>Gangneung-Wonju National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yong-Gang Kim</h5>
-                                <p>
-                                    <span>Kongju National University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Dong-Wook Cho</h5>
-                                <p>
-                                    <span>Chungbuk Provincial College</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Tae-Woon Kim</h5>
-                                <p>
-                                    <span>Hallym University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Chan-Jun Chun</h5>
-                                <p>
-                                    <span>Chosun University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>In-Oh Choi</h5>
-                                <p>
-                                    <span>Korea Maritime & Ocean University</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="committee-block">
-                <h4>Organizing committee</h4>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yong-Jae Kim</h5>
-                                <p>
-                                    <span>Finance Chair</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Seok-Chan Kim</h5>
-                                <p>
-                                    <span>Publicity Chair</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yong-Gang Kim</h5>
-                                <p>
-                                    <span>Registration Chair</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>In-Oh Choi</h5>
-                                <p>
-                                    <span>Publication Chair</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>Yu-Jae Song, Yong-Gang Kim</h5>
-                                <p>
-                                    <span>Web Chair</span>
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="committee-block">
-                <h4>International advisor committee</h4>
-                <ul>
-                    <li>
-                        <div class="row">
-                            <div class="col-md-10">
-                                <h5>TBD</h5>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+            <header>
+                <ul><li>Technical Program Committee (co-)Chairs</li></ul>
+            </header>
+            <ul>
+                <li>Seung-Jae Baek <span>Korea Institute of Ocean Science & Technology</span></li>
+                <li>Kyung-Rak Sohn <span>Korea Maritime & Ocean University</span></li>
+            </ul>
+        </section>
 
+        <section>
+            <header>
+                <ul><li>Technical Program Committee</li></ul>
+            </header>
+            <ul>
+                <li>Yeon-Ho Chung <span>Pukyong National University</span></li>
+                <li>Dong-Myung Lee <span>Tongmyong University</span></li>
+                <li>Seung-Jae Baek <span>Korea Institute of Ocean Science & Technology</span></li>
+                <li>Kyung-Rak Sohn <span>Korea Maritime & Ocean University</span></li>
+                <li>Jae-Hong Lim <span>Korea Maritime & Ocean University</span></li>
+                <li>Yong-Jae Kim <span>Korea Institute of Ocean Science & Technology</span></li>
+                <li>Yu-Jae Song <span>Kumoh National Institute of Technology</span></li>
+                <li>Woo-Yeol Choi <span>Chosun University</span></li>
+                <li>Sung-Hoon Lim <span>Hallym University</span></li>
+                <li>Woo-Yong Lee <span>Electronics and Telecommunications Research Institute</span></li>
+                <li>Keun-Young Kim <span>Electronics and Telecommunications Research Institute</span></li>
+                <li>Jin-Hwan Go <span>Gyeongsang National University</span></li>
+                <li>Wang-Sang Lee <span>Gyeongsang National University</span></li>
+                <li>Hyun-Tae Cho <span>Tongmyong University</span></li>
+                <li>Seok-Chan Kim <span>Pusan National University</span></li>
+                <li>Yeon-Man Jung <span>Gangneung-Wonju National University</span></li>
+                <li>Yong-Gang Kim <span>Kongju National University</span></li>
+                <li>Dong-Wook Cho <span>Chungbuk Provincial College</span></li>
+                <li>Tae-Woon Kim <span>Hallym University</span></li>
+                <li>Chan-Jun Chun <span>Chosun University</span></li>
+                <li>In-Oh Choi <span>Korea Maritime & Ocean University</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <header>
+                <ul><li>Organizing Committee</li></ul>
+            </header>
+            <ul>
+                <li>Yong-Jae Kim <span>Finance Chair</span></li>
+                <li>Seok-Chan Kim <span>Publicity Chair</span></li>
+                <li>Yong-Gang Kim <span>Registration Chair</span></li>
+                <li>In-Oh Choi <span>Publication Chair</span></li>
+                <li>Yu-Jae Song, Yong-Gang Kim <span>Web Chair</span></li>
+            </ul>
+        </section>
+
+        <section>
+            <header>
+                <ul><li>International Advisory Committee</li></ul>
+            </header>
+            <ul>
+                <li>To Be Determined</li>
+            </ul>
         </section>
     </article>
 </main>

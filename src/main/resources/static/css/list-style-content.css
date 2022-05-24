@@ -1,0 +1,24 @@
+main > article > section {
+    margin-bottom: 4rem;
+}
+
+main > article > section > header > ul > li {
+    font-size: 1.5rem;
+    letter-spacing: -0.1rem;
+    font-weight: bold;
+    list-style: square;
+}
+
+main > article > section > ul {
+    font-size: 1.2rem;
+    letter-spacing: -0.1rem;
+    margin-top: 1.4rem;
+    line-height: 2.5rem;
+}
+
+main > article > section > ul span {
+    color: #acacac;
+    font-size: 1rem;
+    letter-spacing: -0.05rem;
+    margin-left: 4px;
+}
