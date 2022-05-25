@@ -1,5 +1,5 @@
 body {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/ictc2022/img/77.png) no-repeat center top;
+    background: url(/img/77.png) no-repeat center top;
     background-size: 1920px 950px;
     background-color: #ebedef;
 }
@@ -64,7 +64,7 @@ body > main > article:first-child > div:last-child {
 .bracket {
     width: 275px;
     height: 234px;
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/bg_tab_deco01.png) no-repeat top left, url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/bg_tab_deco02.png) no-repeat bottom right;
+    background: url(/img/bg_tab_deco01.png) no-repeat top left, url(/img/bg_tab_deco02.png) no-repeat bottom right;
     background-size: 88%;
     margin-right: 60px;
 }
@@ -109,7 +109,7 @@ body > main > article:first-child > div:last-child {
 .linkBoxes a > div {
     width: 160px;
     height: 165px;
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/bg_link_color.png) no-repeat center center/cover;
+    background: url(/img/bg_link_color.png) no-repeat center center/cover;
     background-color: #91D2E4;
     position: relative;
 }
@@ -127,41 +127,41 @@ body > main > article:first-child > div:last-child {
 }
 
 .boxIcon1::after {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/it21/icon3.png);
+    background: url(/img/linkbox/icon1.png);
 }
 
 .boxIcon2::after {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/it21/icon2_new.png);
+    background: url(/img/linkbox/icon2.png);
 }
 
 .boxIcon3::after {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/it21/icon1.png);
+    background: url(/img/linkbox/icon3.png);
 }
 
 .boxIcon4::after {
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/ico_link_08.png);
+    background: url(/img/linkbox/icon4.png);
     background-size: 75px auto !important;
 }
 
 .boxIcon5::after {
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/ico_link_06.png);
+    background: url(/img/linkbox/icon5.png);
 }
 
 .boxIcon6::after {
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/ico_link_07.png);
+    background: url(/img/linkbox/icon6.png);
     background-size: 75px auto !important;
 }
 
 .boxIcon7::after {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/it21/icon4_new.png);
+    background: url(/img/linkbox/icon7.png);
 }
 
 .boxIcon8::after {
-    background: url(https://d2kjln74dkk4oj.cloudfront.net/vendor/it21sample/img/main/ico_link_09.png);
+    background: url(/img/linkbox/icon8.png);
 }
 
 .boxIcon9::after {
-    background: url(https://journal-home.s3.ap-northeast-2.amazonaws.com/site/it21/icon5_new.png);
+    background: url(/img/linkbox/icon9.png);
 }
 
 .linkBoxes a > div > span {
