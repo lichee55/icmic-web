@@ -95,6 +95,10 @@ body > main > article:first-child > div:last-child {
     border: none;
 }
 
+body > main > article > div:nth-child(2) > div:nth-child(2) {
+    position: relative;
+}
+
 #linkBoxes {
     width: 620px;
     height: 195px;
@@ -183,6 +187,39 @@ body > main > article:first-child > div:last-child {
     padding-right: 20px;
     text-align: center;
     line-height: 20px;
+}
+
+#slideBtns {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    height: 30px;
+    left: calc(620px / 2 - 120px / 2);
+}
+
+#slideBtns > div {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slideBtns > div > div {
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100%;
+    transition: all 0.3s;
+}
+
+#slideBtns > div.selected > div {
+    width: 13px;
+    height: 13px;
+    background: none;
+    border: 2px solid #fff;
 }
 
 #linkCircle {
