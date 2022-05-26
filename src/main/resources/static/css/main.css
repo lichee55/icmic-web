@@ -62,18 +62,18 @@ body > main > article:first-child > div:last-child {
     justify-content: space-between;
 }
 
-.bracket {
+#bracket {
     width: 275px;
     height: 234px;
     background: url(/img/bg_tab_deco01.png) no-repeat top left, url(/img/bg_tab_deco02.png) no-repeat bottom right;
     background-size: 88%;
 }
 
-.bracket > ul {
+#bracket > ul {
     padding: 15px 40px;
 }
 
-.bracket > ul > li {
+#bracket > ul > li {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -83,30 +83,41 @@ body > main > article:first-child > div:last-child {
     cursor: pointer;
 }
 
-.bracket > ul > li.selected {
+#bracket > ul > li.selected {
     color: #91D2E4;
 }
 
-.bracket > ul > li:hover {
+#bracket > ul > li:hover {
     color: #91D2E4;
 }
 
-.bracket > ul > li:last-child {
+#bracket > ul > li:last-child {
     border: none;
 }
 
-.linkBoxes ul {
-    display: none;
+#linkBoxes {
+    width: 620px;
+    height: 195px;
+    overflow: hidden;
+}
+
+#linkBoxes > div {
+    width: calc(620px * 3 + 25px * (3 - 1));
+    height: 195px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    transition: all 0.8s;
+}
+
+#linkBoxes ul {
+    display: flex;
     justify-content: space-between;
     width: 620px;
     padding: 15px;
 }
 
-.linkBoxes ul.selected {
-    display: flex;
-}
-
-.linkBoxes a > div {
+#linkBoxes a > div {
     width: 160px;
     height: 165px;
     background: url(/img/bg_link_color.png) no-repeat center center/cover;
@@ -114,7 +125,7 @@ body > main > article:first-child > div:last-child {
     position: relative;
 }
 
-.linkBoxes a > div::after {
+#linkBoxes a > div::after {
     content: '';
     background-position: center center;
     background-repeat: no-repeat;
@@ -164,7 +175,7 @@ body > main > article:first-child > div:last-child {
     background: url(/img/linkbox/icon9.png);
 }
 
-.linkBoxes a > div > span {
+#linkBoxes a > div > span {
     color: #fff;
     display: block;
     padding-top: 100px;
@@ -174,13 +185,13 @@ body > main > article:first-child > div:last-child {
     line-height: 20px;
 }
 
-.linkCircle {
+#linkCircle {
     position: relative;
     border-radius: 100%;
     box-shadow: 0 0 0 1px #3f81e4 inset;
 }
 
-.linkCircle a {
+#linkCircle a {
     width: 160px;
     height: 160px;
     margin: 15px;
@@ -194,7 +205,7 @@ body > main > article:first-child > div:last-child {
     text-align: center;
 }
 
-.linkCircle div {
+#linkCircle div {
     position: absolute;
     top: 0;
     left: 0;
@@ -206,7 +217,7 @@ body > main > article:first-child > div:last-child {
     transition: all 0.3s;
 }
 
-.linkCircle a:hover + div {
+#linkCircle a:hover + div {
     width: 190px;
     height: 190px;
     margin: 0;
