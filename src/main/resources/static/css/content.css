@@ -17,11 +17,19 @@ main > article > header > h2 {
     letter-spacing: -0.1rem;
 }
 
+main > article > header > div {
+    width: 0.5px;
+    height: 15px;
+    background: #ddd;
+    margin-bottom: 13px;
+}
+
 main > article > header > h3 {
     font-size: 17px;
     color: #acacac;
     margin-bottom: 11px;
     letter-spacing: -0.1rem;
+    margin-left: 14px;
 }
 
 .fileDownload {
