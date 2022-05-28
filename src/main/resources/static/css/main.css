@@ -312,3 +312,7 @@ td.emphasis {
     color: #4D8CC9;
     font-weight: bold;
 }
+
+.patron {
+    margin: 0 15px;
+}
