@@ -53,8 +53,8 @@ body > header > nav > ul > li {
 
 body > header > nav > ul > li > a {
     line-height: 80px;
-    font-size: 17px;
-    letter-spacing: -0.1rem;
+    font-size: 16px;
+    letter-spacing: -0.09rem;
     font-weight: 600;
     color: #303030;
 }
