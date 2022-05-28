@@ -76,4 +76,9 @@ public class MainController {
     public String program() {
         return "program";
     }
+
+    @GetMapping("/history")
+    public String history() {
+        return "history";
+    }
 }

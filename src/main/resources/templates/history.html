@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+
+    <style>
+        .nav-link {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .nav-link:hover {
+            color: #23527c !important;
+        }
+
+        .nav-link.active {
+            color: #4d6b8a !important;
+        }
+
+        .tab-pane {
+            margin-top: 3.5rem;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        tbody>tr {
+            height: 50px;
+            border-top: 1px solid #e7ecf1;
+        }
+
+        tbody>tr:last-child {
+            border-bottom: 1px solid #e7ecf1;
+        }
+
+        tbody>tr>td {
+            padding: 0 15px;
+            font-size: 17px;
+        }
+
+        tbody>tr>td:first-child {
+            width: 20%;
+            font-weight: bold;
+        }
+
+        tbody>tr>td:last-child {
+            width: 80%;
+        }
+
+        .fileDownload,
+        .goHomepage {
+            line-height: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>History</h2>
+                <div></div>
+                <h3>Past Conferences</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <nav>
+                    <div class="nav nav-tabs" id="history-tab" role="tablist">
+                        <!-- 비활성 버튼: class에서 active 삭제, aria-selected="false" -->
+                        <button class="nav-link active" id="nav-2022-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-2022" type="button" role="tab" aria-controls="nav-2022"
+                            aria-selected="true">
+                            2022
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="history-tabContent">
+                    <!-- 비활성 버튼: class에서 show active 삭제 -->
+                    <div class="tab-pane show active" id="nav-2022" role="tabpanel" aria-labelledby="nav-2022-tab">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Title</td>
+                                    <td>
+                                        ICMIC 2022
+                                        &nbsp;&nbsp;
+                                        <a href="http://icmic-conf.org" target="_blank" class="btn goHomepage">
+                                            <i class="fa fa-home"></i>
+                                            &nbsp;Homepage
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Theme</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>2022. 09. 22 ~ 23</td>
+                                </tr>
+                                <tr>
+                                    <td>Venue</td>
+                                    <td>Sono Calm Jeju</td>
+                                </tr>
+                                <tr>
+                                    <td>Program</td>
+                                    <td>
+                                        <a href="#" target="_blank" data-bs-toggle="modal"
+                                            data-bs-target="#toBeDetermined" class="btn fileDownload">
+                                            Program Book
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
