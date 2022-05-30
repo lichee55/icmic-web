@@ -1,13 +1,24 @@
 package org.icmic.icmicweb.controller;
 
+import lombok.RequiredArgsConstructor;
+import org.icmic.icmicweb.dto.BoardDetailDTO;
+import org.icmic.icmicweb.service.BoardService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
+@RequiredArgsConstructor
 public class MainController {
 
+    private final BoardService boardService;
+
     @GetMapping("/")
-    public String hello() {
+    public String hello(Model model) {
+        Page<BoardDetailDTO> boardList = boardService.findBoardList(PageRequest.of(0, 5));
+        model.addAttribute("boardList", boardList);
         return "index";
     }
 

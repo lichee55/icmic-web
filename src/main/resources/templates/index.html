@@ -48,7 +48,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                    <a href="/board">
                                         <div class="boxIcon3">
                                             <span>Notice</span>
                                         </div>
@@ -162,7 +162,16 @@
                         <i class="fa fa-sticky-note" aria-hidden="true"></i>
                         &nbsp;News & Notice
                     </header>
-                    <div><br>will be revealed later!<br><br></div>
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr th:each="dto : ${boardList}">
+                                    <td><a th:text="${dto.title}" th:href="@{/board/detail(id=${dto.id})}"></a></td>
+                                    <td th:text="${dto.createdAt.toLocalDate()}"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             </div>
             <section>

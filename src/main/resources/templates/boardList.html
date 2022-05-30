@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+
+    <style>
+        table {
+            font-size: 18px;
+        }
+
+        tr > th:nth-child(1) {
+            width: 15%;
+        }
+
+        tr > th:nth-child(3) {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Notice</h2>
+                <div></div>
+                <h3>Notice</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section th:with="pageNumber=${boardList.pageable.pageNumber}, pageSize=${boardList.pageable.pageSize}">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Title</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="dto, idx : ${boardList}"
+                            th:onclick="'location.href=\''+ @{/board/detail(id=${dto.id})} + '\''">
+                            <td th:text="${pageNumber * pageSize + idx.count}"></td>
+                            <td th:text="${dto.title}"></td>
+                            <td th:text="${dto.createdAt.toLocalDate()}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

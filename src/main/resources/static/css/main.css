@@ -313,6 +313,10 @@ td.emphasis {
     font-weight: bold;
 }
 
+.board > div > section:nth-child(2) a:hover {
+    color: inherit;
+}
+
 .patron {
     margin: 0 15px;
 }
