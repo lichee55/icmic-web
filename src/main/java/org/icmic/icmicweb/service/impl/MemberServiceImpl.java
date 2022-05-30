@@ -11,14 +11,12 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-
 
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
@@ -26,7 +24,6 @@ import java.util.Optional;
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
-    private final PasswordEncoder passwordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -45,7 +42,7 @@ public class MemberServiceImpl implements MemberService {
         Member member = MemberSaveDTO.toEntity(saveDTO);
         member.setRole(Role.ROLE_GUEST);
 
-        member.setPassword(passwordEncoder.encode(member.getPassword()));
+        member.setPassword(new BCryptPasswordEncoder().encode(member.getPassword()));
         return memberRepository.save(member).getId();
     }
 
