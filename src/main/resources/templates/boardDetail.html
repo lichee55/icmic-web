@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+    <style>
+        main>article>section>div {
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Notice</h2>
+                <div></div>
+                <h3>Notice</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Title</td>
+                            <td th:text="${boardDetail.title}"></td>
+                        </tr>
+                        <tr>
+                            <td>Date</td>
+                            <td th:text="${T(org.icmic.icmicweb.util.DateUtil).withoutT(boardDetail.createdAt)}"></td>
+                        </tr>
+                        <tr>
+                            <td>Content</td>
+                            <td th:text="${boardDetail.content}"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div>
+                    <a href="/board" class="btn goHomepage">List</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
