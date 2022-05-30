@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/table.css">
+
+    <style>
+        main>article>section>form>div {
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn {
+            margin-top: 25px;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+            border: solid 1px #ccc;
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Notice</h2>
+                <div></div>
+                <h3>Notice</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <form action="/board/write" method="post">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Title</td>
+                                <td>
+                                    <input type="text" name="title" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Content</td>
+                                <td>
+                                    <textarea name="content" rows="16"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div>
+                        <input type="submit" class="btn goHomepage" value="Save">
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

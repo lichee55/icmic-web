@@ -38,7 +38,7 @@ public class BoardController {
     @PostMapping("/board/write")
     public String writeBoard(@ModelAttribute BoardWriteDTO boardWriteDTO) {
         Long newBoardId = boardService.writeBoard(boardWriteDTO);
-        return "redirect:/board/detail?boardId=" + newBoardId;
+        return "redirect:/board/detail?id=" + newBoardId;
     }
 }
 
