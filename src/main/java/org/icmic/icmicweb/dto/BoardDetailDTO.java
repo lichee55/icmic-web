@@ -3,6 +3,7 @@ package org.icmic.icmicweb.dto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.icmic.icmicweb.domain.Board;
 
 import java.time.LocalDateTime;
@@ -10,6 +11,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Builder
+@ToString
 public class BoardDetailDTO {
 
     private Long id;

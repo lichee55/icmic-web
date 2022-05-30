@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequiredArgsConstructor
@@ -18,10 +19,11 @@ public class BoardController {
     private final BoardService boardService;
 
     @GetMapping("/board")
+    @ResponseBody
     public String board(Model model, Pageable pageable) {
         Page<BoardDetailDTO> boardList = boardService.findBoardList(pageable);
         model.addAttribute("boardList", boardList);
-        return "board";
+        return boardList.toString();
     }
 
     @GetMapping("/board/detail")
@@ -31,7 +33,13 @@ public class BoardController {
         return "boardDetail";
     }
 
-    @PostMapping("/board")
+    @GetMapping("/board/write")
+    @ResponseBody
+    public String boardWrite() {
+        return "boardWrite";
+    }
+
+    @PostMapping("/board/write")
     public String writeBoard(BoardWriteDTO boardWriteDTO) {
         Long newBoardId = boardService.writeBoard(boardWriteDTO);
         return "redirect:/board/detail?boardId=" + newBoardId;

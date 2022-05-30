@@ -9,6 +9,7 @@ import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Table
 @Getter
 @Builder
 @AllArgsConstructor
