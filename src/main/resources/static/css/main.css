@@ -25,7 +25,7 @@ main > article:first-of-type > :first-child > div {
 
 #icmicTitle {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    color: #0069a0;
+    color: #164666;
     font-size: 4.4rem;
     font-weight: 900;
     margin-bottom: 10px;
@@ -83,12 +83,9 @@ body > main > article:first-child > div:last-child {
     cursor: pointer;
 }
 
-#bracket > ul > li.selected {
-    color: #91D2E4;
-}
-
+#bracket > ul > li.selected,
 #bracket > ul > li:hover {
-    color: #91D2E4;
+    color: #a9c8dd;
 }
 
 #bracket > ul > li:last-child {
@@ -124,8 +121,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 #linkBoxes a > div {
     width: 160px;
     height: 165px;
-    background: url(/img/bg_link_color.png) no-repeat center center/cover;
-    background-color: #91D2E4;
+    background-color: #43769f;
     position: relative;
 }
 
@@ -155,7 +151,6 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 
 .boxIcon4::after {
     background: url(/img/linkbox/icon4.png);
-    background-size: 75px auto !important;
 }
 
 .boxIcon5::after {
@@ -164,7 +159,6 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 
 .boxIcon6::after {
     background: url(/img/linkbox/icon6.png);
-    background-size: 75px auto !important;
 }
 
 .boxIcon7::after {
@@ -225,7 +219,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 #linkCircle {
     position: relative;
     border-radius: 100%;
-    box-shadow: 0 0 0 1px #3f81e4 inset;
+    box-shadow: 0 0 0 1px #4d8cbf inset;
 }
 
 #linkCircle a {
@@ -250,7 +244,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
     height: 160px;
     margin: 15px;
     border-radius: 100%;
-    background-color: #3f81e4;
+    background-color: #4d8cbf;
     transition: all 0.3s;
 }
 
