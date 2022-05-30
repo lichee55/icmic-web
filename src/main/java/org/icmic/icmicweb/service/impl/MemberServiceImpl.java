@@ -38,6 +38,7 @@ public class MemberServiceImpl implements MemberService {
 
 
     @Override
+    @Transactional
     public Long save(MemberSaveDTO saveDTO) {
         Member member = MemberSaveDTO.toEntity(saveDTO);
         member.setRole(Role.ROLE_GUEST);
