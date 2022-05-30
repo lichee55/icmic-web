@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <main>
+        <form method="post" action="/login">
+            <div>
+                <h2>International Conference on Maritime IT Convergence</h2>
+                <h4>Site Manager Login</h4>
+            </div>
+            <div>
+                <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

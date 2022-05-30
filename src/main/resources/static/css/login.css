@@ -1,0 +1,23 @@
+main {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #34495e;
+    padding: 5rem 0;
+}
+
+main > form > div:first-child {
+    margin-bottom: 50px;
+}
+
+main > form > div:first-child > h2 {
+    margin-bottom: 20px;
+}
+
+main > form > div:last-child {
+    padding: 0 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
