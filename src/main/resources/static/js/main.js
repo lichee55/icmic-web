@@ -11,7 +11,7 @@ $(function () {
         $(circleBtns[currentIdx]).removeClass('selected');
         $(circleBtns[i]).addClass('selected');
 
-        $(boxes).css('margin-left', (-645 * i) + 'px');
+        $(boxes).css('margin-left', (-3 * (180 + 55) * i) + 'px');
         currentIdx = i;
     };
 
