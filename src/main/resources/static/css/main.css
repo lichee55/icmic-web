@@ -36,15 +36,17 @@ body > header > nav {
 }
 
 #icmicMeaning {
-    font-size: 1.6em;
+    font-size: 1.7rem;
 }
 
 #icmicDate {
-    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
 }
 
+#icmicDate,
 #icmicPlace {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 #icmicImage {
@@ -61,12 +63,12 @@ body > main > article:first-child > div:last-child {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 70px 85px 40px 85px;
+    margin: 40px;
 }
 
 #bracket {
-    width: 290px;
-    height: 250px;
+    width: 310px;
+    height: 260px;
     background: url(/img/bg_tab_deco01.png) no-repeat top left, url(/img/bg_tab_deco02.png) no-repeat bottom right;
     background-size: 90%;
 }
@@ -80,7 +82,7 @@ body > main > article:first-child > div:last-child {
     font-weight: 700;
     color: #fff;
     border-bottom: 1px solid #ddd;
-    line-height: 70px;
+    line-height: 73px;
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -99,15 +101,22 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
     margin-bottom: 20px;
 }
 
+:root {
+    --linkBoxWidth: 200px;
+    --linkBoxHeight: 215px;
+    --linkBoxSpace: 55px;
+    --linkBoxPadding: 15px;
+}
+
 #linkBoxes {
-    width: calc(180px * 3 + 55px * (3 - 1) + 15px * 2);
-    height: calc(190px + 15px * 2);
+    width: calc(var(--linkBoxWidth) * 3 + var(--linkBoxSpace) * (3 - 1) + var(--linkBoxPadding) * 2);
+    height: calc(var(--linkBoxHeight) + var(--linkBoxPadding) * 2);
     overflow: hidden;
 }
 
 #linkBoxes > div {
-    width: calc(180px * 9 + 55px * (9 - 1) + 15px * 2);
-    height: calc(190px + 15px * 2);
+    width: calc(var(--linkBoxWidth) * 9 + var(--linkBoxSpace) * (9 - 1) + var(--linkBoxPadding) * 2);
+    height: calc(var(--linkBoxHeight) + var(--linkBoxPadding) * 2);
     display: flex;
     justify-content: space-between;
     margin-left: 0;
@@ -117,13 +126,13 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 #linkBoxes ul {
     display: flex;
     justify-content: space-between;
-    width: calc(180px * 3 + 55px * (3 - 1) + 15px * 2);
-    padding: 15px;
+    width: calc(var(--linkBoxWidth) * 3 + var(--linkBoxSpace) * (3 - 1) + var(--linkBoxPadding) * 2);
+    padding: var(--linkBoxPadding);
 }
 
 #linkBoxes a > div {
-    width: 180px;
-    height: 190px;
+    width: var(--linkBoxWidth);
+    height: var(--linkBoxHeight);
     background-color: #43769f;
     position: relative;
 }
@@ -132,7 +141,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
     content: '';
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 50px auto;
+    background-size: 70px auto;
     position: absolute;
     top: 7px;
     left: 0;
@@ -179,7 +188,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
 #linkBoxes a > div > span {
     color: #fff;
     display: block;
-    padding-top: 115px;
+    padding-top: 140px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -192,7 +201,7 @@ body > main > article > div:nth-child(2) > div:nth-child(2) {
     justify-content: space-between;
     width: 120px;
     height: 30px;
-    left: calc((180px * 3 + 55px * (3 - 1) + 15px * 2) / 2 - 120px / 2);
+    left: calc((var(--linkBoxWidth) * 3 + var(--linkBoxSpace) * (3 - 1) + var(--linkBoxPadding) * 2) / 2 - 120px / 2);
     bottom: -30px;
 }
 
