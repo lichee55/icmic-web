@@ -16,14 +16,14 @@ public class BoardDetailDTO {
 
     private Long id;
     private String title;
-    private String content;
+    private String[] content;
     private LocalDateTime createdAt;
 
     public static BoardDetailDTO toDTO(Board board) {
         return BoardDetailDTO.builder()
                 .id(board.getId())
                 .title(board.getTitle())
-                .content(board.getContent())
+                .content(board.getContent().split("\n"))
                 .createdAt(board.getCreatedAt())
                 .build();
     }

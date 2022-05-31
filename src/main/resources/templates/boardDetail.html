@@ -46,7 +46,9 @@
                         </tr>
                         <tr>
                             <td>Content</td>
-                            <td th:text="${boardDetail.content}"></td>
+                            <td>
+                                <p th:each="contentLine : ${boardDetail.content}">[(${contentLine})]</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

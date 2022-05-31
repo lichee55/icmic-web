@@ -34,9 +34,13 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public Long writeBoard(BoardWriteDTO boardWriteDTO) {
+        String content = boardWriteDTO.getContent();
+        content = content.replace("<", "&lt;");
+        content = content.replace(">", "&gt;");
+
         Board board = Board.builder()
                 .title(boardWriteDTO.getTitle())
-                .content(boardWriteDTO.getContent())
+                .content(content)
                 .createdAt(LocalDateTime.now())
                 .build();
         return boardRepository.save(board).getId();
