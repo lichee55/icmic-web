@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
+
+    <style>
+        main > article > section:last-child > div > iframe {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Travel Information</h2>
+                <div></div>
+                <h3>Venue</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>Information</h3>
+                </header>
+                <div>
+                    Sono Calm Jeju is located by the southern coast of Jeju Island. The resort complex has a beautiful garden and a walking path along the beach. It is also fully equipped with relaxation, leisure, and entertainment facilities, and business centers.<br>
+                    Sono Calm Jeju has three lodging facilities: Shineville, Luxury, and Royalville buildings. The rooms in Shineville and Luxury are hotel rooms that are inspired by neo-classic designs while the Royalville offers an ocean-view villa-style room for a more personal feel. Some of the facilities available include a fitness club, restaurants, karaoke, cocktail bar, saunas, an outdoor swimming pool, banquet hall, and more.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Transportation</h3>
+                </header>
+                <div>
+                    [Shuttle] Free shuttle bus available from Jeju International Airport.<br>
+                    Call and make a reservation in advance.
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3334.5071013761844!2d126.78990941501542!3d33.30555578081572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350d088617e7df05%3A0x6807aba3a4be32bf!2sSono%20Calm%20Jeju!5e0!3m2!1sen!2skr!4v1654262609374!5m2!1sen!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
