@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
+    <style>
+        section > header > h2 {
+            font-size: 1.8em;
+        }
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            line-height: 1.8em;
+            font-size: 1.2em;
+        }
+
+        .emphasized {
+            font-weight: bold;
+            color: red;
+        }
+
+        .link-button {
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 0.5em;
+            text-decoration: none;
+            color: #27488b;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .inner2 {
+            color: black;
+            margin-left: 1.5em;
+            font-size: 1em;
+            line-height: 1.6em;
+            font-weight: normal;
+        }
+
+        .inner2 > ul {
+            list-style-type: square;
+            margin-left: 2em;
+            margin-top: 1.2em;
+            margin-bottom: 1.2em;
+        }
+
+        .inner2 > ul > li {
+            margin-bottom: 0.5em;
+            line-height: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+<main>
+    <article>
+        <!-- 본문 타이틀 -->
+        <header>
+            <h2>Paper submission</h2>
+            <div></div>
+            <h3>Call for papers</h3>
+        </header>
+
+        <section>
+            <header>
+                <h2>Submission Guidelines</h2>
+            </header>
+            <div class="inner">
+                ICMIC 2002 invites submission of original, unpublished research work (including position papers) that is
+                not currently under review elsewhere. Authors may submit either a 4-page (max) full paper or a 1-page
+                (max) recent results. All submissions should be in PDF format, formatted with single-spaced, two-column
+                pages using at least 10 pt (or higher) size fonts on A4 or letter pages following the standard IEEE
+                conference templates.
+            </div>
+            <div class="emphasized">
+                Paper Submission Deadline: July 31, 2022
+                <br>
+                Papers should be submitted through this link :
+                <button class="link-button">
+                    <a href="https://edas.info/N29776" target="_blank">
+                        Submit
+                    </a>
+                </button>
+                <br>
+                Standard IEEE conference template is available at :
+                <button class="link-button">
+                    <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
+                        IEEE
+                    </a>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Camera-Ready Submission Guidelines</h2>
+            </header>
+            <div class="inner">
+                All camera-ready submissions must be submitted electronically, in PDF format, and uploaded on EDAS. The
+                final camera-ready manuscript of your paper should account for all the critical reviewers’ feedback. The
+                maximum paper length is 6 pages, and papers exceeding 6 pages will not be accepted by EDAS. Proofread
+                your source document thoroughly as there will be no possibility for further revision.
+                All camera-ready manuscript submissions MUST be formatted with the standard IEEE conference templates
+                and MUST be validated by IEEE PDF eXpress. The IEEE Copyright should be submitted from EDAS as well.
+                Furthermore, in order for your paper(s) to be published in the ICMIC 2022 Conference Proceedings and
+                IEEE
+                Xplore, an author (including students) of an accepted paper is required to register for the conference
+                at the Full rate and must present the paper at the conference.
+                Once you have completed the preparation of your final manuscript, IEEE PDF eXpress validation, copyright
+                submission, and registration, you can upload your final manuscript in EDAS. In the EDAS page of your
+                paper, select the “Final Manuscript” button and follow the instructions to upload the PDF file with the
+                final manuscript of your paper that has been previously obtained from PDF.
+            </div>
+            <div class="emphasized">
+                Camera-ready Submission Deadline: August 15, 2022
+                <br>
+                Papers should be submitted through this link :
+                <button class="link-button">
+                    <a href="https://edas.info/N29776" target="_blank">
+                        Submit
+                    </a>
+                </button>
+                <br>
+                Standard IEEE conference templates for LaTeX are available at
+                <button class="link-button">
+                    <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
+                        IEEE
+                    </a>
+                </button>
+                <br>
+                Validation of the manuscript by IEEE PDF eXpress is required.
+                <div class="inner2">
+                    Prior to submission, the final manuscript PDF file must be validated by IEEE PDF eXpress to ensure
+                    that it is IEEE Xplore-compliant.
+                    <ul>
+                        <li>
+                            Go to <a href="https://ieee-pdf-express.org/" target="_blank">IEEE PDF eXpress</a>
+                        </li>
+                        <li>
+                            If you are a new user, select 'New Users - Click here' and enter the Conference ID (see
+                            below), your email address and choose a password. If you have used previously PDF eXpress
+                            you should enter the same password that was used for previous conference.
+                        </li>
+                        <li>
+                            Conference ID: XXXXXX
+                        </li>
+                    </ul>
+                    <div>
+                        Once inside PDF eXpress you have two options:
+                    </div>
+                    <ul>
+                        <li>
+                            Option 1 (recommended): You can generate the PDF file from your source files (e.g. MS Word)
+                            and the generated PDF file will be IEEE Xplore-compliant. For executing this option, you
+                            have to select “Create New Title”, introduce the title of the paper, and then upload the
+                            source files. Once the file is converted, download it. This will be the final manuscript
+                            file that you will have to upload later on in EDAS.
+                        </li>
+                        <li>
+                            Option 2: You can validate a PDF file generated previously with any other tool. If you
+                            choose this option, please make sure that all the fonts are embedded, there are no bookmarks
+                            and no links (URLs). For executing this option, you have to select “Create New Title”,
+                            introduce the title of the paper, and then upload your PDF file. Once the status of the file
+                            indicates “PDF Passed PDF check; PDF is IEEE Xplore compatible”, download it from PDF
+                            eXpress. This will be the final manuscript file that you will have to upload later on in
+                            EDAS (please note that EDAS will not allow you to upload the initial PDF file, but the
+                            validated and certified file that you download from PDF eXpress).
+                        </li>
+                    </ul>
+                </div>
+                <div>IEEE Copyright Form Submission Instructions:</div>
+                <div class="inner2">
+                    Please login to your EDAS account and look for your ICMIC 2022 accepted paper under
+                    your EDAS
+                    dashboard, then click on the copyright icon. You will be then directed to an EDAS webpage in
+                    which you should click on the button “IEEE Copyright Submission.” You will be then redirected to
+                    IEEE eCF website where you will be able to easily complete and submit your copyright form
+                    online. Please do so no later than August 1st 2022 as this step is compulsory for paper
+                    inclusion in the technical program and its submission for publication by IEEE Xplore®
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+    </article>
+</main>
+<div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
