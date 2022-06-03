@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+
+    <style>
+        main > article > section:last-child > div > p {
+            font-size: 20px;
+            letter-spacing: -0.03rem;
+        }
+
+        main > article > section:last-child > div > p > a {
+            color: #3F81E4;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>Travel Information</h2>
+                <div></div>
+                <h3>Accommodation</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <div>
+                    <p>Accommodation : Sono Calm Jeju</p>
+                    <p>Reservation Due : TBD</p>
+                    <p>Inquiry : TBD</p>
+                    <p>
+                        Information Website :
+                        <a href="https://english.visitkorea.or.kr/enu/ACM/AC_EN_4_8.jsp?cid=351536">Shortcut</a>
+                    </p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
