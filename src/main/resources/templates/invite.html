@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <div th:replace="fragments/breadcrumb :: breadcrumb"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h2>About ICMIC 2022</h2>
+                <div></div>
+                <h3>General Information</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <div>
+                    The International Conference on Maritime IT Convergence (ICMIC) will be inaugurated in 2022 with
+                    aims to promote convergence activities of maritime and terrestrial communications as well as related
+                    wireless communications. Recognizing that maritime communications will usually involve ship-to-ship
+                    and ship-to-shore communication, maritime ICT technologies will bring some mature but still evolving
+                    terrestrial wired/wireless communication technologies to its own use for future smart maritime
+                    communications. More specifically, the conference will focus on addressing challenges of maritime
+                    communications with ICT convergence or advanced wireless communications over various industrial
+                    sectors, academia and practice engineers. The conference will include keynote speech sessions,
+                    invited special sessions and technical paper sessions.
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>
