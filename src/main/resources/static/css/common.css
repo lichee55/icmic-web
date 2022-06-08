@@ -22,7 +22,7 @@ p {
     margin: 0;
 }
 
-body > header > nav,
+body > header > div,
 body > nav > div,
 main > article,
 footer > div {
@@ -36,22 +36,27 @@ footer > div {
 # header
 --------------------------------------------------------------*/
 
-body > header {
-    margin-top: 45px;
+body > header > div {
+    padding-top: 45px;
+    background-color: #1B567D;
 }
 
-body > header > nav > ul {
+body > header > div > nav {
+    background-color: white;
+}
+
+body > header > div > nav > ul {
     display: flex;
 }
 
-body > header > nav > ul > li {
+body > header > div > nav > ul > li {
     width: 150px;
     padding: 0 13px;
     text-align: center;
     position: relative;
 }
 
-body > header > nav > ul > li > a {
+body > header > div > nav > ul > li > a {
     line-height: 80px;
     font-size: 16px;
     letter-spacing: -0.09rem;
@@ -82,6 +87,46 @@ body > header > nav > ul > li > a {
 
 .sub-nav > ul > li > a > span {
     letter-spacing: -0.9px;
+}
+
+#icmicInfo {
+    color: white;
+    display: flex;
+    height: 180px;
+}
+
+#icmicInfo > div:first-child {
+    width: 470px;
+}
+
+#icmicTitle {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: #164666;
+    font-size: 4.4rem;
+    font-weight: 900;
+    height: 180px;
+    line-height: 180px;
+    text-align: center;
+}
+
+#icmicInfo > div:last-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#icmicMeaning {
+    font-size: 1.7rem;
+}
+
+#icmicDate {
+    margin-top: 0.7rem;
+    margin-bottom: 0.2rem;
+}
+
+#icmicDate,
+#icmicPlace {
+    font-size: 1.2rem;
 }
 
 

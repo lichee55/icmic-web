@@ -2,180 +2,192 @@
 <html xmlns:th="http://www/thymeleaf.org">
 <th:block th:fragment="header">
     <header>
-        <nav>
-            <ul>
-                <!-- 1 -->
-                <li>
-                    <a href="/">
-                        <span>Home</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 2 -->
-                <li>
-                    <a href="/invite">
-                        <span>About</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/invite">
-                                    <span>General Information</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/board">
-                                    <span>What's New</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 3 -->
-                <li>
-                    <a href="/committee">
-                        <span>Committees</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/committee">
-                                    <span>International Advisory Committee</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 4 -->
-                <li>
-                    <a href="/cfp">
-                        <span>Call for Papers</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/cfp">
-                                    <span>Call for Papers</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/submission">
-                                    <span>Paper Submission</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 5 -->
-                <li>
-                    <a href="/program">
-                        <span>Program</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/program">
-                                    <span>Program at a Glance</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Technical Paper Session</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Keynote Speeches</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Industrial Session</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Special Session</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Guideline for Session Chairs</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Information for Presenters</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 6 -->
-                <li>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                        <span>Registration</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Registration</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 7 -->
-                <li>
-                    <a href="/venue">
-                        <span>Travel Information</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/venue">
-                                    <span>Venue</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/accommodation">
-                                    <span>Accommodation</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
-                                    <span>Travel Information</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- 8 -->
-                <li>
-                    <a href="/history">
-                        <span>History</span>
-                    </a>
-                    <div class="sub-nav">
-                        <ul>
-                            <li>
-                                <a href="/history">
-                                    <span>Past Conferences</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <ul>
+                    <!-- 1 -->
+                    <li>
+                        <a href="/">
+                            <span>Home</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 2 -->
+                    <li>
+                        <a href="/invite">
+                            <span>About</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/invite">
+                                        <span>General Information</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/board">
+                                        <span>What's New</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 3 -->
+                    <li>
+                        <a href="/committee">
+                            <span>Committees</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/committee">
+                                        <span>International Advisory Committee</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 4 -->
+                    <li>
+                        <a href="/cfp">
+                            <span>Call for Papers</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/cfp">
+                                        <span>Call for Papers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/submission">
+                                        <span>Paper Submission</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 5 -->
+                    <li>
+                        <a href="/program">
+                            <span>Program</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/program">
+                                        <span>Program at a Glance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Technical Paper Session</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Keynote Speeches</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Industrial Session</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Special Session</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Guideline for Session Chairs</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Information for Presenters</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 6 -->
+                    <li>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                            <span>Registration</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Registration</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 7 -->
+                    <li>
+                        <a href="/venue">
+                            <span>Travel Information</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/venue">
+                                        <span>Venue</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/accommodation">
+                                        <span>Accommodation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#toBeDetermined">
+                                        <span>Travel Information</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- 8 -->
+                    <li>
+                        <a href="/history">
+                            <span>History</span>
+                        </a>
+                        <div class="sub-nav">
+                            <ul>
+                                <li>
+                                    <a href="/history">
+                                        <span>Past Conferences</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="icmicInfo">
+                <div>
+                    <div id="icmicTitle">ICMIC 2022</div>
+                </div>
+                <div>
+                    <div id="icmicMeaning">International Conference on Maritime IT Convergence</div>
+                    <div id="icmicDate">Sep. <i>22</i> THU.-<i>23</i> FRI. 2022</div>
+                    <div id="icmicPlace">Sono Calm, Jeju Island, Korea</div>
+                </div>
+            </div>
+        </div>
     </header>
 </th:block>
 
