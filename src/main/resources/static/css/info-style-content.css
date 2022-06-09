@@ -1,5 +1,5 @@
 main > article > section {
-    border-bottom: 2px solid #3F81E4;
+    border-bottom: 2px solid #333;
     margin: 1em;
     line-height: 2rem;
 }
@@ -7,7 +7,7 @@ main > article > section {
 main > article > section > header > h3 {
     font-weight: bold;
     font-size: 1.3em;
-    color: #27488b;
+    color: #333;
     padding-left: 1rem;
     margin-top: 20px;
 }
