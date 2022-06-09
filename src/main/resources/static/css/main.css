@@ -26,10 +26,6 @@
     margin-bottom: 40px;
 }
 
-.board > div > section {
-    width: 50%;
-}
-
 .board section > header {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -38,31 +34,31 @@
     border-bottom: solid 1px #f3f3f3;
 }
 
-.board table {
+#schedule {
     width: 100%;
 }
 
-.board td {
-    padding: 8px;
-    font-size: 1.25em;
+#schedule > div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.board td:first-of-type {
-    text-align: left;
+#schedule > div > div {
+    width: 350px;
+    padding: 20px 30px;
     font-weight: bold;
 }
 
-.board td:last-of-type {
-    text-align: right;
+#schedule > div > div > div:first-child {
+    font-size: 1.35rem;
+    letter-spacing: -0.05rem;
+    margin-bottom: 10px;
+    color: #505050;
 }
 
-td.emphasis {
-    color: #4D8CC9;
-    font-weight: bold;
-}
-
-.board > div > section:nth-child(2) a:hover {
-    color: inherit;
+#schedule > div > div > div:last-child {
+    font-size: 1.2rem;
+    color: #4681a8;
 }
 
 .patron {

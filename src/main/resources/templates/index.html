@@ -18,52 +18,32 @@
         </article>
         <article class="board">
             <div>
-                <section>
+                <section id="schedule">
                     <header>
                         <i class="fa fa-check" aria-hidden="true"></i>
                         &nbsp;Important Dates
                     </header>
                     <div>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>CFP Release</td>
-                                    <td class="emphasis">May 06, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Paper Submission Deadline</td>
-                                    <td class="emphasis">July 31, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Notification of Acceptance</td>
-                                    <td class="emphasis">August 15, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Camera-ready Deadline</td>
-                                    <td class="emphasis">August 31, 2022</td>
-                                </tr>
-                                <tr>
-                                    <td>Author Registration Deadline</td>
-                                    <td class="emphasis">August 31, 2022</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-                <section>
-                    <header>
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                        &nbsp;News & Notice
-                    </header>
-                    <div>
-                        <table>
-                            <tbody>
-                                <tr th:each="dto : ${boardList}">
-                                    <td><a th:text="${dto.title}" th:href="@{/board/detail(id=${dto.id})}"></a></td>
-                                    <td th:text="${dto.createdAt.toLocalDate()}"></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div>
+                            <div>CFP Release</div>
+                            <div>May 06, 2022</div>
+                        </div>
+                        <div>
+                            <div>Paper Submission Deadline</div>
+                            <div>July 31, 2022</div>
+                        </div>
+                        <div>
+                            <div>Notification of Acceptance</div>
+                            <div>August 15, 2022</div>
+                        </div>
+                        <div>
+                            <div>Camera-ready Deadline</div>
+                            <div>August 31, 2022</div>
+                        </div>
+                        <div>
+                            <div>Author Registration Deadline</div>
+                            <div>August 31, 2022</div>
+                        </div>
                     </div>
                 </section>
             </div>
