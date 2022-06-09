@@ -7,6 +7,7 @@ main > article > section > header > ul > li {
     letter-spacing: -0.1rem;
     font-weight: bold;
     list-style: square;
+    margin-left: 25px;
 }
 
 main > article > section > ul {
@@ -14,6 +15,7 @@ main > article > section > ul {
     letter-spacing: -0.1rem;
     margin-top: 1.4rem;
     line-height: 2.5rem;
+    margin-left: 25px;
 }
 
 main > article > section > ul span {
