@@ -6,52 +6,41 @@
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/info-style-content.css">
     <style>
-        .program-area {
-            z-index: -1;
-            position: relative;
-            align-items: center;
+        main > article > section {
             display: flex;
-            justify-content: center;
-            border-bottom: 1px solid #ccc;
-            padding: 2em 2em 2em 2em;
-            margin-top: -1px;
         }
 
-        .program-area > h4 {
-            top: 50%;
-            left: 0;
-            position: relative;
-            width: 10em;
-            text-align: center;
+        .program-area {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .program-area > div:first-child {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .program-area > div:first-child > h4 {
             color: #333;
-            font-size: 1.5em;
+            font-size: 1.5rem;
             font-weight: 700;
-            margin-left: 2em;
         }
 
         .program-box {
-            display: block;
-
+            padding: 0 25px;
         }
 
         .program-box > dl {
-            position: relative;
-            padding-left: 5em;
-            font-size: 1.2em;
-            line-height: 2em;
-        }
-
-        .program-box > dl > dt {
-            position: relative;
-            top: 0;
-            left: 0;
-            display: block;
+            font-size: 1.2rem;
         }
 
         .program-box > dl > dd {
-            padding-left: 2em;
-            font-weight: bold;
+            padding-left: 25px;
             display: inline;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -70,7 +59,7 @@
         <!-- 본문 -->
         <section>
             <div class="program-area">
-                <h4>September 22nd</h4>
+                <div><h4>September 22nd</h4></div>
                 <div class="program-box">
                     <dl>
                         <dt>12:30 - 12:40</dt>
@@ -103,7 +92,7 @@
                 </div>
             </div>
             <div class="program-area">
-                <h4>September 23rd</h4>
+                <div><h4>September 23rd</h4></div>
                 <div class="program-box">
                     <dl>
                         <dt>08:30 - 10:30</dt>
