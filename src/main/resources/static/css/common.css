@@ -96,7 +96,7 @@ body > header > div > nav > ul > li > a {
 }
 
 #icmicInfo > div:first-child {
-    width: 470px;
+    width: 450px;
 }
 
 #icmicTitle {
@@ -119,14 +119,14 @@ body > header > div > nav > ul > li > a {
     font-size: 1.7rem;
 }
 
-#icmicDate {
+#icmicDatePlace {
     margin-top: 0.7rem;
     margin-bottom: 0.2rem;
+    font-size: 1.2rem;
 }
 
-#icmicDate,
-#icmicPlace {
-    font-size: 1.2rem;
+#icmicTopic {
+    font-size: 1.05rem;
 }
 
 
@@ -165,7 +165,7 @@ footer {
 footer > div {
     padding: 22px 0 30px 0;
     color: #333;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: -0.06em;
     display: flex;
     justify-content: space-between;
@@ -175,7 +175,25 @@ footer > div > div:first-child {
     display: flex;
 }
 
-footer > div > div:first-child > div:first-child {
+.footerInfo {
+    margin-left: 20px;
+}
+
+.footerInfo > p {
+    margin-top: 5px;
+}
+
+.footerCopyright {
+    font-size: 15px;
+}
+
+footer > div > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+
+footer > div > div:last-child > div:first-child {
     width: 160px;
     text-align: center;
 }
@@ -192,16 +210,4 @@ footer > div > div:first-child > div:first-child {
     font-size: 10px;
     color: #777;
     line-height: 12px;
-}
-
-.footerInfo {
-    margin-left: 20px;
-}
-
-.footerMiddle {
-    margin: 1rem 0;
-}
-
-.footerCopyright {
-    font-size: 13px;
 }

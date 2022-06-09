@@ -6,10 +6,6 @@
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/info-style-content.css">
     <style>
-        section > header > h2 {
-            font-size: 1.8em;
-        }
-
         .inner {
             display: flex;
             flex-direction: column;
@@ -17,11 +13,10 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            line-height: 1.8em;
-            font-size: 1.2em;
         }
 
         .emphasized {
+            margin-top: 30px;
             font-weight: bold;
             color: red;
         }
@@ -40,7 +35,6 @@
             color: black;
             margin-left: 1.5em;
             font-size: 1em;
-            line-height: 1.6em;
             font-weight: normal;
         }
 
@@ -53,14 +47,12 @@
 
         .inner2 > ul > li {
             margin-bottom: 0.5em;
-            line-height: 1.4em;
         }
     </style>
 </head>
 
 <body>
 <div th:replace="fragments/header :: header"></div>
-<div th:replace="fragments/breadcrumb :: breadcrumb"></div>
 <main>
     <article>
         <!-- 본문 타이틀 -->
@@ -72,68 +64,72 @@
 
         <section>
             <header>
-                <h2>Submission Guidelines</h2>
+                <h3>Submission Guidelines</h3>
             </header>
-            <div class="inner">
-                ICMIC invites the submissions of original, unpublished research works that are currently not under review. Authors can submit a 1 or 2-page Work-in-Process (WIP) papers. Through Work-in-Progress papers, authors can share latest results with the research community. WIP papers emphasize the novelty of the work, not completeness. All submissions should be in PDF format, formatted with single-spaced, two-column pages using at least 10 pt (or higher) size fonts on A4 or letter pages following the standard IEEE conference templates.
-            </div>
-            <div class="emphasized">
-                Paper Submission Deadline: July 31, 2022
-                <br>
-                Papers should be submitted through this link :
-                <button class="link-button">
-                    <a href="https://edas.info/N29776" target="_blank">
-                        Submit
-                    </a>
-                </button>
-                <br>
-                Standard IEEE conference template is available at :
-                <button class="link-button">
-                    <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
-                        IEEE
-                    </a>
-                </button>
+            <div>
+                <div class="inner">
+                    ICMIC invites the submissions of original, unpublished research works that are currently not under review. Authors can submit a 1 or 2-page Work-in-Process (WIP) papers. Through Work-in-Progress papers, authors can share latest results with the research community. WIP papers emphasize the novelty of the work, not completeness. All submissions should be in PDF format, formatted with single-spaced, two-column pages using at least 10 pt (or higher) size fonts on A4 or letter pages following the standard IEEE conference templates.
+                </div>
+                <div class="emphasized">
+                    Paper Submission Deadline: July 31, 2022
+                    <br>
+                    Papers should be submitted through this link :
+                    <button class="link-button">
+                        <a href="https://edas.info/N29776" target="_blank">
+                            Submit
+                        </a>
+                    </button>
+                    <br>
+                    Standard IEEE conference template is available at :
+                    <button class="link-button">
+                        <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
+                            IEEE
+                        </a>
+                    </button>
+                </div>
             </div>
         </section>
 
         <section>
             <header>
-                <h2>Camera-Ready Submission Guidelines</h2>
+                <h3>Camera-Ready Submission Guidelines</h3>
             </header>
-            <div class="inner">
-                All camera-ready submissions must be submitted electronically, in PDF format, and uploaded on EDAS. The
-                final camera-ready manuscript of your paper should account for all the critical reviewers’ feedback. The
-                maximum paper length is 6 pages, and papers exceeding 6 pages will not be accepted by EDAS. Proofread
-                your source document thoroughly as there will be no possibility for further revision.
-                All camera-ready manuscript submissions MUST be formatted with the standard IEEE conference templates
-                and MUST be validated by IEEE PDF eXpress. The IEEE Copyright should be submitted from EDAS as well.
-                Furthermore, in order for your paper(s) to be published in the ICMIC 2022 Conference Proceedings and
-                IEEE
-                Xplore, an author (including students) of an accepted paper is required to register for the conference
-                at the Full rate and must present the paper at the conference.
-                Once you have completed the preparation of your final manuscript, IEEE PDF eXpress validation, copyright
-                submission, and registration, you can upload your final manuscript in EDAS. In the EDAS page of your
-                paper, select the “Final Manuscript” button and follow the instructions to upload the PDF file with the
-                final manuscript of your paper that has been previously obtained from PDF.
-            </div>
-            <div class="emphasized">
-                Camera-ready Submission Deadline: August 15, 2022
-                <br>
-                Papers should be submitted through this link :
-                <button class="link-button">
-                    <a href="https://edas.info/N29776" target="_blank">
-                        Submit
-                    </a>
-                </button>
-                <br>
-                Standard IEEE conference templates for LaTeX are available at
-                <button class="link-button">
-                    <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
-                        IEEE
-                    </a>
-                </button>
-                <br>
-                Validation of the manuscript by IEEE PDF eXpress is required.
+            <div>
+                <div class="inner">
+                    All camera-ready submissions must be submitted electronically, in PDF format, and uploaded on EDAS. The
+                    final camera-ready manuscript of your paper should account for all the critical reviewers’ feedback. The
+                    maximum paper length is 6 pages, and papers exceeding 6 pages will not be accepted by EDAS. Proofread
+                    your source document thoroughly as there will be no possibility for further revision.
+                    All camera-ready manuscript submissions MUST be formatted with the standard IEEE conference templates
+                    and MUST be validated by IEEE PDF eXpress. The IEEE Copyright should be submitted from EDAS as well.
+                    Furthermore, in order for your paper(s) to be published in the ICMIC 2022 Conference Proceedings and
+                    IEEE
+                    Xplore, an author (including students) of an accepted paper is required to register for the conference
+                    at the Full rate and must present the paper at the conference.
+                    Once you have completed the preparation of your final manuscript, IEEE PDF eXpress validation, copyright
+                    submission, and registration, you can upload your final manuscript in EDAS. In the EDAS page of your
+                    paper, select the “Final Manuscript” button and follow the instructions to upload the PDF file with the
+                    final manuscript of your paper that has been previously obtained from PDF.
+                </div>
+                <div class="emphasized">
+                    Camera-ready Submission Deadline: August 15, 2022
+                    <br>
+                    Papers should be submitted through this link :
+                    <button class="link-button">
+                        <a href="https://edas.info/N29776" target="_blank">
+                            Submit
+                        </a>
+                    </button>
+                    <br>
+                    Standard IEEE conference templates for LaTeX are available at
+                    <button class="link-button">
+                        <a href="https://www.ieee.org/conferences/publishing/templates.html" target="_blank">
+                            IEEE
+                        </a>
+                    </button>
+                    <br>
+                    Validation of the manuscript by IEEE PDF eXpress is required.
+                </div>
                 <div class="inner2">
                     Prior to submission, the final manuscript PDF file must be validated by IEEE PDF eXpress to ensure
                     that it is IEEE Xplore-compliant.
@@ -173,20 +169,20 @@
                         </li>
                     </ul>
                 </div>
-                <div>IEEE Copyright Form Submission Instructions:</div>
-                <div class="inner2">
-                    Please login to your EDAS account and look for your ICMIC 2022 accepted paper under
-                    your EDAS
-                    dashboard, then click on the copyright icon. You will be then directed to an EDAS webpage in
-                    which you should click on the button “IEEE Copyright Submission.” You will be then redirected to
-                    IEEE eCF website where you will be able to easily complete and submit your copyright form
-                    online. Please do so no later than August 15th 2022 as this step is compulsory for paper
-                    inclusion in the technical program and its submission for publication by IEEE Xplore®
+                <div>
+                    <div class="emphasized">IEEE Copyright Form Submission Instructions:</div>
+                    <div class="inner2">
+                        Please login to your EDAS account and look for your ICMIC 2022 accepted paper under
+                        your EDAS
+                        dashboard, then click on the copyright icon. You will be then directed to an EDAS webpage in
+                        which you should click on the button “IEEE Copyright Submission.” You will be then redirected to
+                        IEEE eCF website where you will be able to easily complete and submit your copyright form
+                        online. Please do so no later than August 15th 2022 as this step is compulsory for paper
+                        inclusion in the technical program and its submission for publication by IEEE Xplore®
+                    </div>
                 </div>
             </div>
         </section>
-        <br>
-        <br>
     </article>
 </main>
 <div th:replace="fragments/footer :: footer"></div>
