@@ -1,5 +1,6 @@
 main > article {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: white;
 }
 
 main > article > header {
@@ -15,6 +16,10 @@ main > article > header > h3 {
     background-color: #555;
     color: white;
     padding: 8px 30px;
+}
+
+main > article > section {
+    margin: 1em;
 }
 
 .btn, .btn:hover {

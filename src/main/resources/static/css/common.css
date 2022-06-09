@@ -5,6 +5,8 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #333;
+    background-color: #ebedef;
+    padding-right: 0 !important;
 }
 
 ul {
@@ -82,10 +84,6 @@ body > header > div > nav > ul > li > a {
     display: block;
     padding: 10px 2px;
     font-size: 0.9rem;
-}
-
-.sub-nav > ul > li > a > span {
-    letter-spacing: -0.9px;
 }
 
 #icmicInfo {
