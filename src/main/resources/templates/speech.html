@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
+
+    <style>
+        .emphasis {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h3>Keynote Speeches</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>SPEAKER</h3>
+                </header>
+                <div>
+                    <p class="emphasis">Mohamed-Slim Alouini</p>
+                    <p>Distinguished Professor of Electrical and Computer Engineering</p>
+                    <p>KAUST, Makkah Province, Saudi Arabia</p>
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>TITLE</h3>
+                </header>
+                <div>
+                    <p>Coverage Enhancement of Underwater and Maritime</p>
+                    <p>Multi-Level Communication Networks</p>
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>SUMMARY</h3>
+                </header>
+                <div>
+                    Underwater communication networks (UCNs) are considered a key-enabler to the underwater internet of
+                    things (UIoT). UCNs are regarded as essential for various marine applications such as monitoring,
+                    exploration, and trading. However, a large part of existing literature disregards the 3-dimensional
+                    (3D) nature of the underwater communication system. In this talk, we introduce a K-tier UCN that
+                    acts as a gateway that connects the UIoT with the Space-Air-Ground-Sea Integrated System (SAGSIS).
+                    The proposed network architecture consists of several tiers along the vertical direction with
+                    adjustable depths. On the horizontal dimension, the best coverage probability (CP) is computed and
+                    maximized by optimizing the densities of surface stations (SSs) in each tier. On the vertical
+                    dimension, the depth of each tier is also optimized to minimize inter-tier interference and maximize
+                    overall system performance. We also introduce and analyze, in this talk, a cooperative structure of
+                    SAGSIS to study the CP for SSs on a large-scale and far-reaching ocean surface. By incorporating the
+                    merits of onshore stations (OSs), tethered balloons (TBs), high altitude platforms (HAPS), and
+                    satellites (SATs), cooperative communication links between the terrestrial core connected base
+                    station and SSs are established via a relay station attached to an OS, TB, HAPS, or SAT. Considering
+                    the difference between each propagation environment, and the randomness distribute on SSs, we
+                    reconstruct the cooperative communication links and utilize them in our analysis models of the
+                    point-to-area models recommended by the International Telecom Union (ITU). We concluded our talk by
+                    drawing multiple useful system-level insights that help optimize the design of underwater and
+                    maritime networks based on the given distribution of UIoT devices and SSs.
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>BIO</h3>
+                </header>
+                <div>
+                    Mohamed-Slim Alouini was born in Tunis, Tunisia. He received the Ph.D. degree in Electrical
+                    Engineering from the California Institute of Technology (Caltech) in 1998. He served as a faculty
+                    member at the University of Minnesota then at the Texas A&M University in Qatar before joining in
+                    2009 the King Abdullah University of Science and Technology (KAUST) where he is now a Distinguished
+                    Professor of Electrical and Computer Engineering. Prof. Alouini is a Fellow of the IEEE and OPTICA
+                    (Formerly the Optical Society of America (OSA)). He is currently particularly interested in
+                    addressing the technical challenges associated with the uneven distribution, access to, and use of
+                    information and communication technologies in rural, low-income, disaster, and/or hard-to-reach
+                    areas.
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+</body>
+
+</html>

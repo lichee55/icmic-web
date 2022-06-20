@@ -91,4 +91,9 @@ public class MainController {
     public String history() {
         return "history";
     }
+
+    @GetMapping("/speech")
+    public String speech() {
+        return "speech";
+    }
 }
