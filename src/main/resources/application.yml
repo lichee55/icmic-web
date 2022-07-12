@@ -5,7 +5,11 @@ spring:
   security:
     user:
       password: test
-
+  thymeleaf:
+    excluded-view-names: '*.jsp'
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
 
 ---
 
