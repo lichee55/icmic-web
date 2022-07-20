@@ -9,6 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
+
 @Controller
 @RequiredArgsConstructor
 public class MainController {
@@ -62,9 +66,23 @@ public class MainController {
         return "submission";
     }
 
-    @GetMapping("/registerInfo")
-    public String registerInfo() {
-        return "registerInfo";
+    @GetMapping("/registration")
+    public String registration(Model model) {
+        String datetime = new SimpleDateFormat("yyyyMMddHHmmssSSSS").format(new Date());
+
+        int leftLimit = 'A';
+        int rightLimit = 'Z';
+        int targetStringLength = 4;
+        Random random = new Random();
+        String generatedString = random.ints(leftLimit, rightLimit + 1)
+                .limit(targetStringLength)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+
+        model.addAttribute("Tradeid",
+                "icmic_" + datetime + "_" + generatedString);
+
+        return "registration";
     }
 
     @GetMapping("/venue")

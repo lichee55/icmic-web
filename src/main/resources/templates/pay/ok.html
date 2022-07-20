@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
+
+    <style>
+        article {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h3>Registration</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>Payment completed successfully.</h3>
+                </header>
+                <div>
+                    <table style="width: 450px;">
+                        <tr>
+                            <td>Affiliation</td>
+                            <td>[(${userId})]</td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>[(${userName})]</td>
+                        </tr>
+                        <tr>
+                            <td>Payment Date</td>
+                            <td>[(${payDate})]</td>
+                        </tr>
+                        <tr>
+                            <td>Product Name</td>
+                            <td>[(${productName})]</td>
+                        </tr>
+                        <tr>
+                            <td>Fee</td>
+                            <td>₩[(${price})]</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>

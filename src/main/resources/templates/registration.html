@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www/thymeleaf.org">
+
+<head>
+    <div th:replace="fragments/head :: head"></div>
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
+
+    <style>
+        main > article > section:nth-child(3) > div {
+            display: flex;
+            justify-content: center;
+        }
+
+        #fee-table {
+            width: 75%;
+            text-align: center;
+        }
+
+        #fee-table thead {
+            background-color: #efefef;
+        }
+
+        #fee-table thead tr {
+            height: 50px;
+        }
+
+        #fee-table tr {
+            height: 40px;
+            border-top: 0.5px solid #e0e0e0;
+            border-bottom: 0.5px solid #e0e0e0;
+        }
+
+        #fee-table tr > td:first-child {
+            width: 40%;
+        }
+
+        form[name="payForm"] table {
+            width: 40%;
+        }
+
+        form[name="payForm"] tr {
+            height: 45px;
+        }
+
+        form[name="payForm"] tr > td:first-child {
+            width: 35%;
+        }
+
+        #radio-td {
+            display: flex;
+            height: 45px;
+        }
+
+        #radio-td > div {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        #radio-td label {
+            margin-left: 10px;
+        }
+
+        #Prdtprice-text {
+            text-align: right;
+        }
+
+        form[name="payForm"] input[type="text"] {
+            padding: 0 7px;
+            width: 100%;
+        }
+
+        .btn {
+            background-color: #909090;
+            border-color: #909090;
+        }
+    </style>
+
+    <script src="https://mup.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
+    <script>
+        function payRequest() {
+            if ($("input[name='Userid']").val() == "") {
+                alert('Enter affiliation.');
+                return;
+            }
+            if ($("input[name='Username']").val() == "") {
+                alert('Enter your name.');
+                return;
+            }
+
+            MCASH_PAYMENT(document.payForm);
+        }
+    </script>
+</head>
+
+<body>
+    <div th:replace="fragments/header :: header"></div>
+    <main>
+        <article>
+            <!-- 본문 타이틀 -->
+            <header>
+                <h3>Registration</h3>
+            </header>
+
+            <br>
+
+            <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>Registration Fee</h3>
+                </header>
+                <div>
+                    <table id="fee-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Early Birds</th>
+                                <th>On-Site</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Regular</td>
+                                <td>₩300,000</td>
+                                <td>₩330,000</td>
+                            </tr>
+                            <tr>
+                                <td>Student</td>
+                                <td>₩60,000</td>
+                                <td>₩66,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <header>
+                    <h3>Online Registration</h3>
+                </header>
+                <div>
+                    <form name="payForm">
+                        <input type="hidden" name="CASH_GB" id="CASH_GB" value="CN">
+                        <input type="hidden" name="CN_SVCID" id="CN_SVCID" value="kics_energy">
+                        <input type="hidden" name="PAY_MODE" id="PAY_MODE" value="10">
+                        <input type="hidden" name="Siteurl" id="Siteurl" value="icmic-conf.org">
+                        <input type="hidden" name="VER" id="VER" value="ALL_NEW">
+                        <input type="hidden" name="CALL_TYPE" id="CALL_TYPE" value="P">
+                        <input type="hidden" name="Cryptyn" id="Cryptyn" value="N">
+                        <input type="hidden" name="Tradeid" id="Tradeid" th:value="${Tradeid}">
+                        <input type="hidden" name="CN_BILLTYPE" id="CN_BILLTYPE" value="20">
+
+                        <input type="hidden" name="Okurl" id="Okurl" value="http://icmic-conf.org/pay/ok">
+                        <input type="hidden" name="Failurl" id="Failurl" value="http://icmic-conf.org/pay/fail">
+
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td id="radio-td">
+                                    <div>
+                                        <input type="radio" name="Prdtnm" id="Prdtnm-regular" value="Regular - Registration Fee" checked>
+                                        <label for="Prdtnm-regular">Regular</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="Prdtnm" id="Prdtnm-student" value="Student - Registration Fee">
+                                        <label for="Prdtnm-student">Student</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fee</td>
+                                <td>
+                                    <input type="hidden" name="Prdtprice" id="Prdtprice" value="300000">
+                                    <input type="hidden" name="CN_TAXFREE" id="CN_TAXFREE" value="300000">
+                                    <div id="Prdtprice-text">₩300,000</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Affiliation</td>
+                                <td><input type="text" name="Userid" id="Userid"></td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td><input type="text" name="Username" id="Username"></td>
+                            </tr>
+                            <tr style="height: 30px;">
+                                <td style="text-align: right; color: #666;" colspan="2">
+                                    This information will be used to identify your payment.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td style="text-align: right;">
+                                    <input type="button" class="btn" value="Pay" onclick="payRequest()">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div th:replace="fragments/footer :: footer"></div>
+    <script>
+        $("input[name='Prdtnm']:radio").change(function () {
+            let selected = $(this).attr('id');
+
+            if (selected == 'Prdtnm-regular') {
+                $("input[name='Prdtprice']").val('300000');
+                $("input[name='CN_TAXFREE']").val('300000');
+                $("#Prdtprice-text").text('₩300,000');
+            } else {
+                $("input[name='Prdtprice']").val('60000');
+                $("input[name='CN_TAXFREE']").val('60000');
+                $("#Prdtprice-text").text('₩60,000');
+            }
+        });
+    </script>
+</body>
+
+</html>
