@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/info-style-content.css">
 
     <style>
-        main > article > section:nth-child(3) > div {
+        main > article > section:nth-child(5) > div {
             display: flex;
             justify-content: center;
         }
@@ -76,6 +76,33 @@
             background-color: #909090;
             border-color: #909090;
         }
+
+        #refund-table {
+            width: 100%;
+            text-align: center;
+        }
+
+        #refund-table thead {
+            background-color: #efefef;
+        }
+
+        #refund-table thead tr {
+            height: 50px;
+        }
+
+        #refund-table tr {
+            height: 40px;
+            border-top: 0.5px solid #e0e0e0;
+            border-bottom: 0.5px solid #e0e0e0;
+        }
+
+        #refund-table :is(th, td) {
+            width: 40%;
+        }
+
+        #refund-table :is(th:first-child, td:first-child) {
+            width: 20%;
+        }
     </style>
 
     <script src="https://mup.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
@@ -107,6 +134,34 @@
             <br>
 
             <!-- 본문 -->
+            <section>
+                <header>
+                    <h3>Registration Schedule</h3>
+                </header>
+                <div>
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>Author Registration: <span class="emphasis">August 31, 2022</span></li>
+                            <li>Early Registration(Non-Author): <span class="emphasis">August 31, 2022</span></li>
+                            <li>On-site Registration: <span class="emphasis">September 22, 2022</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                <header>
+                    <h3>Registration Policy</h3>
+                </header>
+                <div>
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>To be published at the ICMIC 2022 Conference Proceedings, more than one author from each accepted paper MUST register at the Regular registration fee and the paper must be presented at the conference.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <header>
                     <h3>Registration Fee</h3>
@@ -198,6 +253,36 @@
                             </tr>
                         </table>
                     </form>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Refund Policy</h3>
+                </header>
+                <div>
+                    If you have already registered for ICMIC 2022 and find that you are unable to attend or cancel the paper, please notify ICMIC 2022 secretariat in writing to <a href="mailto:icmic@icmic-conf.org">icmic@icmic-conf.org</a> to request a refund and cancel your registration. Refund will be made upon receipt of this written notice after the conference.
+                    <br>
+                    If you have any questions, please contact Registration Secretariat of ICMIC 2022 at <a href="mailto:icmic@icmic-conf.org">icmic@icmic-conf.org</a>
+                    <table id="refund-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Refund</th>
+                                <th>No Refund</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Regular</td>
+                                <td>Notice Received before early registration</td>
+                                <td>Notice Received after early registration</td>
+                            </tr>
+                            <tr>
+                                <td>Cancellation fee: US$55.00</td>
+                                <td>No Refund</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
         </article>
