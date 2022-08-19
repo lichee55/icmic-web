@@ -36,7 +36,7 @@
         }
 
         form[name="payForm"] table {
-            width: 40%;
+            width: 45%;
         }
 
         form[name="payForm"] tr {
@@ -47,19 +47,19 @@
             width: 35%;
         }
 
-        #radio-td {
+        .radio-td {
             display: flex;
             height: 45px;
         }
 
-        #radio-td > div {
+        .radio-td > div {
             flex-grow: 1;
             display: flex;
             align-items: center;
             height: 100%;
         }
 
-        #radio-td label {
+        .radio-td label {
             margin-left: 10px;
         }
 
@@ -198,7 +198,6 @@
                 <div>
                     <form name="payForm">
                         <input type="hidden" name="CASH_GB" id="CASH_GB" value="CN">
-                        <input type="hidden" name="CN_SVCID" id="CN_SVCID" value="kics_energy">
                         <input type="hidden" name="PAY_MODE" id="PAY_MODE" value="10">
                         <input type="hidden" name="Siteurl" id="Siteurl" value="icmic-conf.org">
                         <input type="hidden" name="VER" id="VER" value="ALL_NEW">
@@ -213,14 +212,27 @@
                         <table>
                             <tr>
                                 <td></td>
-                                <td id="radio-td">
+                                <td class="radio-td">
                                     <div>
                                         <input type="radio" name="Prdtnm" id="Prdtnm-regular" value="Regular - Registration Fee" checked>
                                         <label for="Prdtnm-regular">Regular</label>
                                     </div>
-                                    <div>
+                                    <div style="flex-grow: 10;">
                                         <input type="radio" name="Prdtnm" id="Prdtnm-student" value="Student - Registration Fee">
                                         <label for="Prdtnm-student">Student</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Card</td>
+                                <td class="radio-td">
+                                    <div style="flex-grow: 5;">
+                                        <input type="radio" name="CN_SVCID" id="CN_SVCID-credit" value="kics_energy" checked>
+                                        <label for="CN_SVCID-credit">Credit</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="CN_SVCID" id="CN_SVCID-corporation" value="kics_energyr">
+                                        <label for="CN_SVCID-corporation">Corporation/Research fund</label>
                                     </div>
                                 </td>
                             </tr>
@@ -261,8 +273,6 @@
                 </header>
                 <div>
                     If you have already registered for ICMIC 2022 and find that you are unable to attend or cancel the paper, please notify ICMIC 2022 secretariat in writing to <a href="mailto:budget@kics.or.kr">budget@kics.or.kr</a> to request a refund and cancel your registration. Refund will be made upon receipt of this written notice after the conference.
-                    <br>
-                    If you have any questions, please contact Registration Secretariat of ICMIC 2022 at <a href="mailto:budget@kics.or.kr">budget@kics.or.kr</a>
                     <table id="refund-table">
                         <thead>
                             <tr>
