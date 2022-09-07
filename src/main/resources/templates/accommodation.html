@@ -4,15 +4,21 @@
 <head>
     <div th:replace="fragments/head :: head"></div>
     <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/info-style-content.css">
 
     <style>
-        main > article > section:last-child > div > p {
-            font-size: 20px;
-            letter-spacing: -0.03rem;
+        #info-table {
+            width: 50%;
+            margin: 10px 0;
         }
 
-        main > article > section:last-child > div > p > a {
-            color: #3F81E4;
+        #info-table tr > td:first-child {
+            width: 60%;
+        }
+
+        .fileDownload {
+            line-height: 1.3rem;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -30,14 +36,55 @@
 
             <!-- 본문 -->
             <section>
+                <header>
+                    <h3>INFORMATION</h3>
+                </header>
                 <div>
-                    <p>Accommodation : Sono Calm Jeju</p>
-                    <p>Reservation Due : TBD</p>
-                    <p>Inquiry : TBD</p>
-                    <p>
-                        Information Website :
-                        <a href="https://english.visitkorea.or.kr/enu/ACM/AC_EN_4_8.jsp?cid=351536">Shortcut</a>
-                    </p>
+                    <div class="articleListWrapper">
+                        <ul>
+                            <li>Accommodation : Sono Calm Jeju</li>
+                            <li>Reservation Due : September 16, 2022</li>
+                            <li>
+                                Inquiry :
+                                <div class="articleListWrapperLv2">
+                                    <ul>
+                                        <li>
+                                            E-mail:
+                                            <a href="mailto:dongsu.lee@daemyungsono.com">dongsu.lee@daemyungsono.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                Information :
+                                <table id="info-table">
+                                    <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Family (Suitable for 1~2 people)</td>
+                                        <td>₩170,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suite Deluxe (Suitable for 3~4 people)</td>
+                                        <td>₩200,000</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                Reservation Request Form :
+                                <a href="/Sono Calm Reservation Request Form.xlsx" class="btn fileDownload">
+                                    <i class="fas fa-download"></i>
+                                    &nbsp;Request Form Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </article>

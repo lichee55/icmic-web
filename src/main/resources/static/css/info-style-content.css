@@ -1,3 +1,21 @@
+table {
+    text-align: center;
+}
+
+thead {
+    background-color: #efefef;
+}
+
+thead tr {
+    height: 50px;
+}
+
+tr {
+    height: 40px;
+    border-top: 0.5px solid #e0e0e0;
+    border-bottom: 0.5px solid #e0e0e0;
+}
+
 main > article > section {
     border-bottom: 2px solid #333;
     line-height: 2rem;
@@ -25,6 +43,15 @@ main > article > section a {
 
 .articleListWrapper > ul {
     list-style: circle;
+    padding-left: 1rem;
+}
+
+.articleListWrapperLv2 {
+    padding-left: 1rem;
+}
+
+.articleListWrapperLv2 > ul {
+    list-style: disc;
     padding-left: 1rem;
 }
 
