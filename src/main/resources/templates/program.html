@@ -4,45 +4,10 @@
 <head>
     <div th:replace="fragments/head :: head"></div>
     <link rel="stylesheet" href="/css/content.css">
-    <link rel="stylesheet" href="/css/info-style-content.css">
     <style>
-        main > article > section {
-            display: flex;
-            border-top: 2px solid #333;
-            border-bottom: 2px solid #333;
-        }
-
-        .program-area {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-        }
-
-        .program-area > div:first-child {
-            height: 80px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .program-area > div:first-child > h4 {
-            color: #333;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 1em;
-        }
-
-        .program-box {
-            padding: 0 25px;
-        }
-
-        .program-box > dl {
-            font-size: 1.2rem;
-        }
-
-        .program-box > dl > dd {
-            padding-left: 25px;
-            display: inline;
-            font-size: 1.1rem;
+        iframe {
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -58,83 +23,8 @@
 
         <!-- 본문 -->
         <section>
-            <div class="program-area">
-                <div><h4>September 22nd</h4></div>
-                <div class="program-box">
-                    <dl>
-                        <dt>12:30 - 12:40</dt>
-                        <dd>Opening remarks (Program chair)</dd>
-                    </dl>
-                    <dl>
-                        <dt>12:40 - 14:40</dt>
-                        <dd>Tech' Session #1</dd>
-                        <dd>Session title</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                    <dl>
-                        <dt>14:40 - 15:10</dt>
-                        <dd>Keynote Address #1 (TBD)</dd>
-                    </dl>
-                    <dl>
-                        <dt>15:10 - 15:30</dt>
-                        <dd>Coffee break</dd>
-                    </dl>
-                    <dl>
-                        <dt>15:30 - 16:00</dt>
-                        <dd>Keynote Address #2 (TBD)</dd>
-                    </dl>
-                    <dl>
-                        <dt>16:00 - 18:00</dt>
-                        <dd>Tech' Session #2</dd>
-                        <dd>KIOST session #1</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="program-area">
-                <div><h4>September 23rd</h4></div>
-                <div class="program-box">
-                    <dl>
-                        <dt>08:30 - 10:30</dt>
-                        <dd>Tech' Session #3</dd>
-                        <dd>Session title</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                    <dl>
-                        <dt>10:30 - 12:30</dt>
-                        <dd>Tech' Session #4</dd>
-                        <dd>KIOST Session #2</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                    <dl>
-                        <dt>12:30 - 13:30</dt>
-                        <dd>Lunch</dd>
-                    </dl>
-                    <dl>
-                        <dt>13:30 - 14:00</dt>
-                        <dd>Keynote Address #3 (TBD)</dd>
-                    </dl>
-                    <dl>
-                        <dt>14:00 - 16:00</dt>
-                        <dd>Tech' Session #5</dd>
-                        <dd>Session title</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                    <dl>
-                        <dt>16:00 - 16:20</dt>
-                        <dd>Coffee break</dd>
-                    </dl>
-                    <dl>
-                        <dt>16:20 - 18:20</dt>
-                        <dd>Tech' Session #6</dd>
-                        <dd>Session title</dd>
-                        <dd>6 papers</dd>
-                    </dl>
-                </div>
-            </div>
+            <iframe width="80%" height="800px" src="/finalProgram_ver20220914_1500 (pre-final).pdf"></iframe>
         </section>
-        <br>
-        <br>
     </article>
 </main>
 <div th:replace="fragments/footer :: footer"></div>
