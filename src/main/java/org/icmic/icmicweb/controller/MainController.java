@@ -114,4 +114,9 @@ public class MainController {
     public String speech() {
         return "speech";
     }
+
+    @GetMapping("/presenter")
+    public String presenter() {
+        return "presenter";
+    }
 }

@@ -44,3 +44,7 @@ main > article > section {
     background-color: #286090;
     border-color: #23527c;
 }
+
+main > article > section a {
+    color: #3F81E4;
+}

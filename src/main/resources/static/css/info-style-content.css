@@ -33,10 +33,6 @@ main > article > section > div {
     padding: 1rem;
 }
 
-main > article > section a {
-    color: #3F81E4;
-}
-
 .articleListWrapper {
     padding-left: 1rem;
 }
