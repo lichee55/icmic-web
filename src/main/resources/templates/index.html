@@ -4,6 +4,25 @@
 <head>
     <div th:replace="fragments/head :: head"></div>
     <link rel="stylesheet" href="/css/main.css">
+
+    <style>
+        .btn, .btn:hover {
+            color: #fff;
+            letter-spacing: 0;
+        }
+
+        .fileDownload {
+            background-color: #ed6b75;
+            border-color: #ea5460;
+            float: right;
+            margin-right: 1em;
+        }
+
+        .fileDownload:hover {
+            background-color: #e73d4a;
+            border-color: #e42735;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,6 +36,10 @@
             </div>
         </article>
         <article class="board">
+            <a href="/Request Letter for IEICE TCS.pdf" target="_blank" class="btn fileDownload">
+                <i class="fas fa-download"></i>
+                &nbsp;Request letter for IEICE TCS
+            </a>
             <div>
                 <section id="schedule">
                     <header>
